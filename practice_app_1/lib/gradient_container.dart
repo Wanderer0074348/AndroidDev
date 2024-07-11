@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:practice_app_1/text_widget.dart';
+import 'package:practice_app_1/dice_roller.dart';
+
+// import 'package:practice_app_1/text_widget.dart';
 
 class GradientContainer extends StatelessWidget {
-  const GradientContainer({super.key});
+  const GradientContainer(this.colors, {super.key});
+  final List<Color> colors;
 
   @override
   Widget build(context) {
-    Alignment startAlignment = Alignment.topCenter;
-    Alignment endAlignment = Alignment.bottomCenter;
+    // Alignment startAlignment = Alignment.topCenter;
+    // Alignment endAlignment = Alignment.bottomCenter;
 
     return Container(
       decoration: BoxDecoration(
-        gradient: LinearGradient(
-            colors: const [Colors.white, Colors.cyan],
-            begin: startAlignment,
-            end: endAlignment),
+        gradient: RadialGradient(colors: colors),
       ),
-      child: Center(
-        child: TextWidget("I Love Pokemon"),
+      child: const Center(
+        child: DiceRoller(),
       ),
     );
   }
