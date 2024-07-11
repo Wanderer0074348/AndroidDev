@@ -1,30 +1,12 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
+import 'package:practice_app_1/gradient_container.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: Scaffold(
-        body: ,
+        body: GradientContainer(),
       ),
     ),
   );
-}
-
-class GradientContainer extends StatelessWidget{
-  @override
-  Widget build(context){
-    return Container(
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(colors: [Colors.white, Colors.black]),
-          ),
-          child: const Center(
-            child: Text("Hello World",
-                style: TextStyle(color: Colors.blue, fontSize: 28.0)),
-          ),
-        );
-  }
-
-
 }
