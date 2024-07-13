@@ -1,7 +1,7 @@
 
 # My Android Development Journey
 
-Welcome to my GitHub repository documenting my journey in Android development using Flutter and Dart! This repository is a chronicle of my learning experiences, resources, and progress.
+Welcome to my GitHub repository documenting my journey in Android development using Flutter and Dart! This repository is a log of my learning experiences, resources, and progress. 
 
 ## Table of Contents
 - [Introduction](#introduction)
